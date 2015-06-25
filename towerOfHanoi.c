@@ -15,11 +15,11 @@ int main()
   {
     if(disk == 1)
     {
-      printf("%c --> %c",&source_disk,&dest_disk);
+      printf("%c --> %c",source_disk,dest_disk);
       return;
     }
     //move n-1 disks to aux_tower
     TOH(disk-1,source_disk,aux_disk,dest_disk);
-    printf("%c --> %c",&source_disk,&dest_disk");
+    printf("%c --> %c",source_disk,dest_disk);
     TOH(disk-1,aux_disk,dest_disk,source_disk);
   }
